@@ -25,3 +25,20 @@ console.log(newCharacter2);
 
 fetch('https://api.chucknorris.io/jokes/random')
 .then(response=>console.log(response))
+
+/* Joke JS*/
+const btn = document.querySelector("button")
+const text = document.querySelector(".joke")
+const div = document.querySelector(".content")
+btn.addEventListener("click", function(){
+    fetch('https://api.chucknorris.io/jokes/random')
+    .then((response)=>{
+        return response.json();
+    }).then((data)=>{
+        let joke = data.value;
+        text.innerText = joke
+    })
+})
+btn.addEventListener("click",()=>{
+    div.style.display = " block";
+})

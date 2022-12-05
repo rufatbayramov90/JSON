@@ -18,3 +18,7 @@ objChar2.agility +=30 ;
 objChar2.intelligence +=30;
 console.log(objChar1);
 console.log(objChar2);
+const newCharacter1 = JSON.stringify(objChar1);
+const newCharacter2 = JSON.stringify(objChar2);
+console.log(newCharacter1);
+console.log(newCharacter2);

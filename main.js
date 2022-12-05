@@ -2,5 +2,7 @@ const data = '{"id":371,"type":"general","joke":"Why does a chicken coop only ha
 const obj = JSON.parse(data);
 obj.id = 157;
 obj.type = 'Change general';
-obj.joke = 'Joke text'
+obj.joke = 'Joke text';
 console.log(obj)
+const newData = JSON.stringify(obj);
+console.log(newData)

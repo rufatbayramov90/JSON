@@ -1,4 +1,4 @@
-const data = '{"id":371,"type":"general","joke":"Why does a chicken coop only have two doors? Because if it had four doors it would be a chicken sedan."}';
+/*const data = '{"id":371,"type":"general","joke":"Why does a chicken coop only have two doors? Because if it had four doors it would be a chicken sedan."}';
 const obj = JSON.parse(data);
 obj.id = 157;
 obj.type = 'Change general';
@@ -22,3 +22,6 @@ const newCharacter1 = JSON.stringify(objChar1);
 const newCharacter2 = JSON.stringify(objChar2);
 console.log(newCharacter1);
 console.log(newCharacter2);
+*/
+fetch('https://api.chucknorris.io/jokes/random')
+.then(response=>console.log(response))

@@ -16,3 +16,20 @@ button{
     border: 1px solid ; 
     display: none;
     }
+    .btn{
+        padding: 20px;
+        background-color: #D8BFD8;
+        color: #2F4F4F;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;;
+        border: 1px solid ; 
+        margin-bottom: 20px;
+    }
+    .content{
+        padding: 20px;
+        background-color: #D8BFD8;
+        color: #2F4F4F;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;;
+        border: 1px solid ; 
+    }

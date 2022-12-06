@@ -36,9 +36,30 @@ btn.addEventListener("click", function(){
         return response.json();
     }).then((data)=>{
         let joke = data.value;
-        text.innerText = joke
+        text.innerText = joke;
+        div.style.display = "block";
     })
 })
-btn.addEventListener("click",()=>{
-    div.style.display = " block";
+
+const btnApi = document.querySelector(".btn");
+const divApi = document.querySelector(".content");
+const info_p = document.querySelector(".info");
+fetch("https://randomuser.me/api/")
+.then(res=>res.json())
+.then((respons)=>{
+    console.log(respons)
+    let name = respons.results[0].name.first
+    let surname = respons.results[0].name.list
+    let email = respons.results[0].email
+    let age = respons.results[0].registered.age
+    let country = respons.results[0].location.country
+    let img = respons.results[0].picture.medium
+    info_p.innerText = `Name:${name}
+    Surname:${surname}
+    Email:${email}
+    Age:${age}
+    Country:${country}`
+    document.querySelector(".image").src=img;
 })
+
+
